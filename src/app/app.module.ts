@@ -39,9 +39,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     RouterModule,
     HttpClientModule,
     ReactiveFormsModule,
-    // add toastr here
+    ToastrModule,
     BrowserAnimationsModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
