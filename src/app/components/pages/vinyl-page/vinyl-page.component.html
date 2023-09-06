@@ -1,0 +1,31 @@
+<app-not-found [visible]="!vinyl" notFoundMessage="Product Not Found" resetLinkText="Back to Homepage"></app-not-found>
+<div *ngIf="vinyl" class="container">
+    <img [src]="vinyl.imageUrl" [alt]="vinyl.name" />
+    <div class="details">
+        <div class="header">
+            <span class="name">{{vinyl.name}}</span>
+            <span class="favorite {{vinyl.favorite?'':'not'}}">❤</span>
+        </div>
+        <div class="rating">
+        </div>
+        <div class="artist">
+            <span *ngFor="let artist of vinyl.artist">
+                {{artist}}
+            </span>
+        </div>
+        <div class="tags">
+            <a href="" *ngFor="let tag of vinyl.tags" routerLink="/tag/{{tag}}">
+                {{tag}}
+                </a>
+        </div>
+        <div class="album-length">
+            <span>Album Length: <strong>{{vinyl.albumLength}}</strong> minutes </span>
+        </div>
+        <div class="price">
+            <span>{{vinyl.price | currency}}</span>
+        </div>
+
+        <button (click)="addToCart()">Add to Cart</button>
+    </div>
+
+</div>

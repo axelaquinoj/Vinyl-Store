@@ -1,0 +1,40 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<app-not-found [visible]="!vinyls || !vinyls.length" resetLinkText="Reset Search">
+</app-not-found>
+
+<ul>
+    <li *ngFor=" let vinyl of vinyls ">
+        <a routerLink="/vinyl/{{vinyl.id}}">
+            <img [src]="vinyl.imageUrl " [alt]="vinyl.name " />
+            <div class="content">
+                <div class="name ">
+                    {{vinyl.name}}
+                </div>
+                <span class="favorite {{vinyl.favorite? '': 'not'}} ">
+            ❤
+          </span>
+                <div class="stars ">
+
+                </div>
+                <div class="product-item-footer ">
+                    <div class="artist ">
+                        <span *ngFor="let artist of vinyl.artist ">
+                {{artist}}
+              </span>
+                    </div>
+
+                    <div class=".album-length ">
+                        <span>🕒</span> {{vinyl.albumLength}}
+                    </div>
+                </div>
+
+                <div class="price ">
+                    <span>
+              {{vinyl.price | currency}}
+            </span>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
