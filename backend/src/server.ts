@@ -45,7 +45,7 @@ app.get('/api/vinyls/tags',(req,res)=>{
 
  })
 
- const generateTokenResponse= (user:any)=>{
+const generateTokenResponse= (user:any)=>{
 const token = jwt.sign({
     email: user.email, isAdmin:user.isAdmin
 }, 'SomeRandomtext',{

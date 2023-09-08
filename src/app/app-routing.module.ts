@@ -12,7 +12,6 @@ const routes: Routes = [
   {path: 'vinyl/:id', component:VinylPageComponent},
   {path: 'cart-page', component:CartPageComponent},
   {path: 'login', component:LoginPageComponent}
-  
 ];
 
 @NgModule({

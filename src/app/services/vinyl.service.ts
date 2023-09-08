@@ -3,7 +3,6 @@ import { Vinyl } from 'src/shared/models/vinyl';
 import { sample_vinyls } from 'src/shared/models/data';
 import { sample_tags } from 'src/shared/models/data';
 import { Tag } from 'src/shared/models/tag';
-import { get } from 'lodash';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { VINYLS_BY_SEARCH_URL,VINYLS_BY_ID_URL,VINYLS_BY_TAGS_URL, VINYLS_TAGS_URL,VINYLS_URL} from 'src/shared/constants/urls';
