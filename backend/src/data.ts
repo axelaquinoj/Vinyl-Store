@@ -1,7 +1,7 @@
 
 export const sample_vinyls: any[] = [
     {
-      id:'1',
+      id: 1,
       name: 'Views',
       albumLength: '10-20',
       price: 10,
@@ -12,7 +12,8 @@ export const sample_vinyls: any[] = [
       tags: ['Rap', 'Hip-Hop', 'R&B','Drake'],
     },
     {
-      id:'2',
+      id: 2,
+
       name: '2014 Forest Hills Drive',
       price: 20,
       albumLength: '20-30',
@@ -23,7 +24,8 @@ export const sample_vinyls: any[] = [
       tags: ['Hip-Hop', 'Rap', 'J.Cole'],
     },
     {
-      id:'3',
+      id: 3,
+
       name: 'Savage Mode II',
       price: 5,
       albumLength: '10-15',
@@ -34,7 +36,8 @@ export const sample_vinyls: any[] = [
       tags: ['Hip-Hop', 'Rap'],
     },
     {
-      id:'4',
+      id: 4,
+
       name: 'ye',
       price: 2,
       albumLength: '15-20',
@@ -45,7 +48,8 @@ export const sample_vinyls: any[] = [
       tags: ['Hip-Hop', 'Rap'],
     },
     {
-      id:'5',
+      id: 5,
+
       name: 'Double or Nothing',
       price: 11,
       albumLength: '40-50',
@@ -56,7 +60,7 @@ export const sample_vinyls: any[] = [
       tags: ['Hip-Hop', 'Rap'],
     },
     {
-      id:'6',
+      id: 6,
       name: 'KIDS SEE GHOSTS',
       price: 9,
       albumLength: '40-50',
